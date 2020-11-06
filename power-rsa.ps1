@@ -122,7 +122,7 @@ Function createtav2client {
 cls
 banner
 $t2v2client = Read-Host "Enter client name"
-openvpn --tls-crypt-v2 $env:HOME\$env:KEY_DIR\v2crypt-server.key --genkey tls-crypt-v2-client $env:HOME\$env:KEY_DIR\$t2v2client.key
+openvpn --tls-crypt-v2 $env:HOME\$env:KEY_DIR\v2crypt-server.key --genkey tls-crypt-v2-client $env:HOME\$env:KEY_DIR\$t2v2client-auth.key
 pause
 Start-Sleep 2
 cls
